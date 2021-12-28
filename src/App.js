@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
 
     getGifs().then(gifs => setGif(gifs));
-    
+     
   }, [])
 
   return (
