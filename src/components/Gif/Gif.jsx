@@ -1,4 +1,5 @@
 import React from "react";
+import "./Gif.css";
 
 const Gif = ({title, id, url}) => {
 
@@ -6,7 +7,6 @@ const Gif = ({title, id, url}) => {
 
     <div className="gif">
       <h4>{title}</h4>
-      <small>{id}</small>
       <img alt={title} src={url} />
     </div>
 
