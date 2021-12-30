@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 
 import './Home.css'
 
@@ -10,12 +10,12 @@ const popGifs = ["nft-nfts", "money", "gold", "oil"]
 const Home = () => {
 
   const [keyword, setKeyword] = useState('')
-
+  const [path, pushLocation] = useLocation()
 
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(keyword);
+    pushLocation(`/gif/${keyword}`)
   }
 
   const handleChange = (e) => {
