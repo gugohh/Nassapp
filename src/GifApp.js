@@ -9,11 +9,11 @@ const GifApp = () => {
   // setCategory([...categories, 'Hulk'])
   // // setCategory(gifcat => [...gifcat, "Hulk"])
   // }
-  
+
   return (
     <div>
       <h2>GIPPY</h2>
-      <AddGifCat/>
+      <AddGifCat setCategory={setCategory}/>
       <hr />
       
       <ol>
@@ -26,5 +26,7 @@ const GifApp = () => {
     </div>
   );
 };
+
+//el typo de props que queremos
 
 export default GifApp;
