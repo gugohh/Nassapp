@@ -15,7 +15,7 @@ const AddGifCat = ({ setCategory }) => {
     console.log("submit done");
 
     if (inputValue.trim().length > 2) {
-      setCategory((gifCat) => [...gifCat, inputValue]);
+      setCategory((gifCat) => [ inputValue, ...gifCat]);
       setInputValue("");
     }
   };
