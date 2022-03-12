@@ -1,8 +1,9 @@
 import React,{useState} from "react";
 import AddGifCat from "./components/AddGifCat";
+import GifList from "./components/GifList";
 
 const GifApp = () => {
-  const [categories, setCategory] = useState(["Scorpion", "Sub-Zero", "Shinnok", "Baraka"])
+  const [categories, setCategory] = useState(["Scorpion"])
   // const categories = ["Scorpion", "Sub-Zero", "Shinnok", "Baraka"];
 
   // const handleAdd = () => {
@@ -18,15 +19,18 @@ const GifApp = () => {
       
       <ol>
         { 
-          categories.map((category) => {
-          return <li key={category}>{category}</li>;
-          })
-        }
+          categories.map(category => (
+            <GifList 
+          key={category}
+          category={category}
+          /> 
+          ))
+          
+        }        
       </ol>
     </div>
   );
 };
 
-//el typo de props que queremos
 
 export default GifApp;
