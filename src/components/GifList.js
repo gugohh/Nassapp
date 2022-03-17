@@ -21,7 +21,7 @@ const GifList = ({ category }) => {
         <p className="canimate__animated animate__flash">Loading...</p>
       )}
 
-      <div className="cardGrid">
+      <div className="card-grid">
         {images.map((img) => (
           <GifItem
             key={img.id}
