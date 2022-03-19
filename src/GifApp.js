@@ -24,8 +24,7 @@ const GifApp = () => {
           key={category}
           category={category}
           /> 
-          ))
-          
+          ))          
         }        
       </ol>
     </div>
